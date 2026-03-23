@@ -1,0 +1,35 @@
+{
+  "skill_name": "aliyun-cli",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have an ECS instance called 'web-prod-01' in Hangzhou. It's running slowly and I want to reboot it. How do I do that with aliyun CLI?",
+      "expected_output": "Claude should: (1) provide the DescribeInstances command to find the instance ID by name first, (2) explain to confirm the instance ID from the output, (3) provide the RebootInstance command with the correct flags. Should mention --RegionId cn-hangzhou."
+    },
+    {
+      "id": 2,
+      "prompt": "My system disk on ECS instance i-bp1abc123 only has 40GB but I need 100GB. The instance is in cn-beijing. Walk me through expanding it.",
+      "expected_output": "Claude should: (1) run DescribeDisks to find the system disk ID, (2) run ResizeDisk with --NewSize 100 and --Type online if possible, (3) explain the OS-level steps needed afterwards (growpart + resize2fs for ext4 or xfs_growfs for xfs), (4) note that online resize doesn't require stopping the instance on modern kernels."
+    },
+    {
+      "id": 3,
+      "prompt": "I need to list all files in my OSS bucket called 'my-company-backups' under the prefix 'daily/2024-01/' and then download all of them to my local machine at /data/backups/",
+      "expected_output": "Claude should provide: (1) aliyun oss ls oss://my-company-backups/daily/2024-01/ to list files, (2) aliyun oss cp oss://my-company-backups/daily/2024-01/ /data/backups/ -r to download recursively. May also mention --jobs flag for parallel downloads."
+    },
+    {
+      "id": 4,
+      "prompt": "I just got a new Ubuntu 22.04 server and want to manage my Alibaba Cloud resources from it. How do I install and configure the aliyun CLI?",
+      "expected_output": "Claude should cover: (1) installation method for Ubuntu (snap or manual binary), (2) running 'aliyun configure', (3) entering AccessKeyId, AccessKeySecret, and default region, (4) optionally explain the difference between root account AK vs RAM user AK, and recommend using a RAM user."
+    },
+    {
+      "id": 5,
+      "prompt": "I want to allow inbound HTTPS traffic (port 443) from the entire internet to security group sg-bp1xyz789 in cn-shenzhen. What's the command?",
+      "expected_output": "Claude should provide the AuthorizeSecurityGroup command with --IpProtocol tcp, --PortRange 443/443, --SourceCidrIp 0.0.0.0/0, and the correct --SecurityGroupId and --RegionId. Should include IPv6 variant with ::/0 if being thorough."
+    },
+    {
+      "id": 6,
+      "prompt": "Show me all ECS instances across cn-hangzhou, cn-beijing, and cn-shanghai in a single command or script.",
+      "expected_output": "Claude should provide a shell loop iterating over the three regions, running DescribeInstances for each with tabular output (--output cols=...). Should use a for loop or similar construct."
+    }
+  ]
+}
