@@ -6,7 +6,10 @@
   "plugins": [
     {
       "name": "aliyun-skill",
-      "source": ".",
+      "source": {
+        "source": "github",
+        "repo": "Hambaobao/aliyun-skill"
+      },
       "description": "Manage Alibaba Cloud resources using the Aliyun CLI"
     }
   ]
