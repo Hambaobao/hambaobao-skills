@@ -7,6 +7,17 @@ description: |
   setup and authentication/credential configuration.
   If the user mentions "阿里云", "Alibaba Cloud", "aliyun", "ECS", or ECS-related operations,
   use this skill.
+metadata:
+  openclaw:
+    emoji: "☁️"
+    requires:
+      bins: ["aliyun"]
+    install:
+      - id: brew
+        kind: brew
+        formula: aliyun-cli
+        bins: ["aliyun"]
+        label: "Install Aliyun CLI (brew)"
 ---
 
 # Aliyun CLI Skill

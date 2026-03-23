@@ -1,6 +1,6 @@
 # aliyun-skill
 
-A [Claude Code](https://claude.ai/code) skill repository for managing Alibaba Cloud resources using the [Aliyun CLI](https://github.com/aliyun/aliyun-cli).
+A skill repository for managing Alibaba Cloud resources using the [Aliyun CLI](https://github.com/aliyun/aliyun-cli). Compatible with [Claude Code](https://claude.ai/code) and [OpenClaw](https://github.com/openclaw/openclaw).
 
 ## Skills
 
