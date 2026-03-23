@@ -1,4 +1,4 @@
-# aliyun-skill
+# Hambaobao Skills
 
 A skill repository for managing Alibaba Cloud resources using the [Aliyun CLI](https://github.com/aliyun/aliyun-cli). Compatible with [Claude Code](https://claude.ai/code) and [OpenClaw](https://github.com/openclaw/openclaw).
 
@@ -19,9 +19,9 @@ Teaches Claude how to construct and execute `aliyun` commands for managing Aliba
 ## Structure
 
 ```
-aliyun-skill/
+hambaobao-skills/
 ├── .claude-plugin/
-│   └── plugin.json       # Claude Code plugin manifest
+│   └── marketplace.json          # Claude Code plugin manifest
 └── skills/
     └── aliyun-cli/
         ├── SKILL.md              # Skill entry point
@@ -42,6 +42,6 @@ aliyun-skill/
 ### Manual
 
 ```bash
-git clone git@github.com:Hambaobao/aliyun-skill.git
-cp -r aliyun-skill/skills/aliyun-cli ~/.claude/skills/
+git clone git@github.com:Hambaobao/hambaobao-skills.git
+cp -r hambaobao-skills/skills/aliyun-cli ~/.claude/skills/
 ```
