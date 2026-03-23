@@ -7,25 +7,19 @@
 brew install aliyun-cli
 ```
 
-### Ubuntu / Debian
+### Linux (Ubuntu / Debian / CentOS / RHEL)
 ```bash
 # Option 1: snap
 sudo snap install aliyun-cli --classic
 
-# Option 2: manual binary install
-wget https://github.com/aliyun/aliyun-cli/releases/latest/download/aliyun-linux-amd64-v3.0.x.tgz
-tar xzf aliyun-linux-amd64-v3.0.x.tgz
+# Option 2: manual binary install (amd64)
+curl -Lo aliyun-cli.tgz https://github.com/aliyun/aliyun-cli/releases/latest/download/aliyun-cli-linux-latest-amd64.tgz
+tar xzf aliyun-cli.tgz
 sudo mv aliyun /usr/local/bin/
-```
 
-### CentOS / RHEL / Alibaba Cloud Linux
-```bash
-# Option 1: snap
-sudo snap install aliyun-cli --classic
-
-# Option 2: manual binary install (same as Ubuntu above)
-wget https://github.com/aliyun/aliyun-cli/releases/latest/download/aliyun-linux-amd64-v3.0.x.tgz
-tar xzf aliyun-linux-amd64-v3.0.x.tgz
+# For arm64
+curl -Lo aliyun-cli.tgz https://github.com/aliyun/aliyun-cli/releases/latest/download/aliyun-cli-linux-latest-arm64.tgz
+tar xzf aliyun-cli.tgz
 sudo mv aliyun /usr/local/bin/
 ```
 

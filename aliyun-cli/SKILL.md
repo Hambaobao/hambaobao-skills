@@ -1,7 +1,7 @@
 ---
 name: aliyun-cli
 description: |
-  Teaches Claude how to manage Alibaba Cloud ECS instances using the Aliyun CLI tool.
+  Manage Alibaba Cloud resources using the Aliyun CLI tool.
   Use this skill whenever the user wants to query, create, start, stop, reboot, or manage ECS
   instances, disks, snapshots, security groups, images, or key pairs. Also triggers for aliyun CLI
   setup and authentication/credential configuration.
