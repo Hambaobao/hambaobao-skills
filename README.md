@@ -36,7 +36,7 @@ aliyun-skill/
 
 ```
 /plugin marketplace add Hambaobao/aliyun-skill
-/plugin install aliyun-skill@hambaobao-aliyun-skill
+/plugin install aliyun-skill@aliyun-skill
 ```
 
 ### Manual

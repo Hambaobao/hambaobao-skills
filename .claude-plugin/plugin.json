@@ -1,8 +1,0 @@
-{
-  "name": "aliyun-skill",
-  "description": "Manage Alibaba Cloud resources using the Aliyun CLI",
-  "version": "1.0.0",
-  "author": {
-    "name": "Hambaobao"
-  }
-}

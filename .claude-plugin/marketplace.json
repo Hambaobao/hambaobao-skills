@@ -3,11 +3,19 @@
   "owner": {
     "name": "Hambaobao"
   },
+  "metadata": {
+    "description": "Manage Alibaba Cloud resources using the Aliyun CLI",
+    "version": "1.0.0"
+  },
   "plugins": [
     {
       "name": "aliyun-skill",
+      "description": "Manage Alibaba Cloud resources using the Aliyun CLI",
       "source": "./",
-      "description": "Manage Alibaba Cloud resources using the Aliyun CLI"
+      "strict": true,
+      "skills": [
+        "./skills/aliyun-cli"
+      ]
     }
   ]
 }
