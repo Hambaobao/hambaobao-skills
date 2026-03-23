@@ -10,7 +10,7 @@
   },
   "plugins": [
     {
-      "name": "aliyun-skill",
+      "name": "aliyun-skills",
       "description": "Manage Alibaba Cloud resources using the Aliyun CLI",
       "source": "./",
       "strict": true,

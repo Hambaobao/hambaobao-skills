@@ -36,7 +36,7 @@ hambaobao-skills/
 
 ```
 /plugin marketplace add Hambaobao/hambaobao-skills
-/plugin install <skill-name>@hambaobao-skills
+/plugin install <plugin-name>@hambaobao-skills
 ```
 
 ### Manual
