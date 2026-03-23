@@ -35,8 +35,8 @@ aliyun-skill/
 ### Claude Code (plugin)
 
 ```
-/plugin marketplace add Hambaobao/aliyun-skill
-/plugin install aliyun-skill@hambaobao-aliyun-skill
+/plugin marketplace add Hambaobao/hambaobao-skills
+/plugin install aliyun-skill@hambaobao-skills
 ```
 
 ### Manual
