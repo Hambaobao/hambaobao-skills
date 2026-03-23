@@ -1,10 +1,11 @@
 {
-  "name": "aliyun-skill",
+  "name": "hambaobao-skills",
   "owner": {
-    "name": "Hambaobao"
+    "name": "Lei Zhang (Hambaobao)",
+    "email": "jameszhang2880@gmail.com"
   },
   "metadata": {
-    "description": "Manage Alibaba Cloud resources using the Aliyun CLI",
+    "description": "A collection of skills shared by Hambaobao",
     "version": "1.0.0"
   },
   "plugins": [
