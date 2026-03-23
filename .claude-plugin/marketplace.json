@@ -1,0 +1,13 @@
+{
+  "name": "aliyun-skill",
+  "owner": {
+    "name": "Hambaobao"
+  },
+  "plugins": [
+    {
+      "name": "aliyun-skill",
+      "source": ".",
+      "description": "Manage Alibaba Cloud resources using the Aliyun CLI"
+    }
+  ]
+}
