@@ -19,9 +19,29 @@ Teaches Claude how to construct and execute `aliyun` commands for managing Aliba
 ## Structure
 
 ```
-aliyun-cli/
-├── SKILL.md              # Skill entry point
-└── references/
-    ├── setup.md          # CLI installation and authentication
-    └── ecs.md            # ECS operations reference
+aliyun-skill/
+├── .claude-plugin/
+│   └── plugin.json       # Claude Code plugin manifest
+└── skills/
+    └── aliyun-cli/
+        ├── SKILL.md              # Skill entry point
+        └── references/
+            ├── setup.md          # CLI installation and authentication
+            └── ecs.md            # ECS operations reference
+```
+
+## Installation
+
+### Claude Code (plugin)
+
+```
+/plugin marketplace add Hambaobao/aliyun-skill
+/plugin install aliyun-skill@hambaobao-aliyun-skill
+```
+
+### Manual
+
+```bash
+git clone git@github.com:Hambaobao/aliyun-skill.git
+cp -r aliyun-skill/skills/aliyun-cli ~/.claude/skills/
 ```
