@@ -6,7 +6,7 @@ description: |
   including: ECS instances, VPC networking, OSS object storage, RDS databases, SLB/CLB load
   balancers, RAM users/roles/policies, DNS records, or aliyun CLI setup and authentication.
   If the user mentions "阿里云", "Alibaba Cloud", "aliyun", "ECS", "VPC", "OSS", "RDS", "SLB",
-  "RAM", or any Alibaba Cloud service, use this skill.
+  "RAM", "ACR", "Container Registry", or any Alibaba Cloud service, use this skill.
 metadata:
   openclaw:
     emoji: "☁️"
@@ -37,6 +37,7 @@ and guide users through cloud resource management tasks.
 | SLB / CLB (Load Balancer) | `references/slb.md` | create LB, manage listeners, add/remove backend servers |
 | RAM (Resource Access Management) | `references/ram.md` | users, groups, roles, policies, access keys |
 | DNS (AliDNS) | `references/dns.md` | list domains, add/update/delete records |
+| ACR (Container Registry) | `references/acr.md` | instances, namespaces, repositories, image tags, docker login |
 | Setup & Auth | `references/setup.md` | install, configure, switch profiles |
 
 Read the relevant reference file before responding to a request.
