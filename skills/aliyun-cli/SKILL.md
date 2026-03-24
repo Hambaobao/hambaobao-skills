@@ -30,6 +30,7 @@ and guide users through cloud resource management tasks.
 
 | Resource | Reference File | Common Operations |
 |----------|---------------|-------------------|
+| Setup & Auth | `references/setup.md` | install, configure, switch profiles |
 | ECS (Elastic Compute Service) | `references/ecs.md` | list, start/stop/reboot, resize disk, create snapshot |
 | VPC (Virtual Private Cloud) | `references/vpc.md` | manage VPCs, VSwitches, EIPs, NAT gateways, route tables |
 | OSS (Object Storage Service) | `references/oss.md` | buckets, upload/download, sync, presigned URLs |
@@ -38,7 +39,6 @@ and guide users through cloud resource management tasks.
 | RAM (Resource Access Management) | `references/ram.md` | users, groups, roles, policies, access keys |
 | DNS (AliDNS) | `references/dns.md` | list domains, add/update/delete records |
 | ACR (Container Registry) | `references/acr.md` | instances, namespaces, repositories, image tags, docker login |
-| Setup & Auth | `references/setup.md` | install, configure, switch profiles |
 
 Read the relevant reference file before responding to a request.
 
