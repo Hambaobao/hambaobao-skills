@@ -2,11 +2,11 @@
 name: aliyun-cli
 description: |
   Manage Alibaba Cloud resources using the Aliyun CLI tool.
-  Use this skill whenever the user wants to query, create, start, stop, reboot, or manage ECS
-  instances, disks, snapshots, security groups, images, or key pairs. Also triggers for aliyun CLI
-  setup and authentication/credential configuration.
-  If the user mentions "阿里云", "Alibaba Cloud", "aliyun", "ECS", or ECS-related operations,
-  use this skill.
+  Use this skill whenever the user wants to manage any Alibaba Cloud resource via the aliyun CLI,
+  including: ECS instances, VPC networking, OSS object storage, RDS databases, SLB/CLB load
+  balancers, RAM users/roles/policies, DNS records, or aliyun CLI setup and authentication.
+  If the user mentions "阿里云", "Alibaba Cloud", "aliyun", "ECS", "VPC", "OSS", "RDS", "SLB",
+  "RAM", or any Alibaba Cloud service, use this skill.
 metadata:
   openclaw:
     emoji: "☁️"
@@ -31,6 +31,12 @@ and guide users through cloud resource management tasks.
 | Resource | Reference File | Common Operations |
 |----------|---------------|-------------------|
 | ECS (Elastic Compute Service) | `references/ecs.md` | list, start/stop/reboot, resize disk, create snapshot |
+| VPC (Virtual Private Cloud) | `references/vpc.md` | manage VPCs, VSwitches, EIPs, NAT gateways, route tables |
+| OSS (Object Storage Service) | `references/oss.md` | buckets, upload/download, sync, presigned URLs |
+| RDS (Relational Database Service) | `references/rds.md` | instances, databases, accounts, backups, IP whitelist |
+| SLB / CLB (Load Balancer) | `references/slb.md` | create LB, manage listeners, add/remove backend servers |
+| RAM (Resource Access Management) | `references/ram.md` | users, groups, roles, policies, access keys |
+| DNS (AliDNS) | `references/dns.md` | list domains, add/update/delete records |
 | Setup & Auth | `references/setup.md` | install, configure, switch profiles |
 
 Read the relevant reference file before responding to a request.
