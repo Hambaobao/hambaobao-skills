@@ -10,6 +10,15 @@
   },
   "plugins": [
     {
+      "name": "raft-team-skill-maintenance",
+      "description": "Maintain and verify skills in Raft team members' workspaces",
+      "source": "./",
+      "strict": true,
+      "skills": [
+        "./raft/skills/team-skill-maintenance"
+      ]
+    },
+    {
       "name": "pr-writing",
       "description": "Write and assess reviewer-friendly PR titles and descriptions",
       "source": "./",
