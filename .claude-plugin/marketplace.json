@@ -10,6 +10,15 @@
   },
   "plugins": [
     {
+      "name": "pr-writing",
+      "description": "Write and assess reviewer-friendly PR titles and descriptions",
+      "source": "./",
+      "strict": true,
+      "skills": [
+        "./skills/pr-writing"
+      ]
+    },
+    {
       "name": "aliyun-skills",
       "description": "Manage Alibaba Cloud resources using the Aliyun CLI",
       "source": "./",
