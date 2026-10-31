@@ -10,7 +10,7 @@ Write, refresh, or assess PR titles and descriptions against the actual branch c
 
 **Use when:** preparing a PR description, updating it after substantive changes, or checking whether an existing PR is clearly written.
 
-**Plugin name:** `pr-writing`. This skill is maintained here and does not require the Sentry plugin.
+**Plugin name:** `pr-writing`.
 
 ### aliyun-cli
 
