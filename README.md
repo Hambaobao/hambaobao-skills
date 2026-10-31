@@ -1,6 +1,8 @@
 # Hambaobao Skills
 
-A collection of Agent Skills for AI coding assistants. Compatible with [Claude Code](https://claude.ai/code) and [OpenClaw](https://github.com/openclaw/openclaw).
+A collection of Agent Skills for AI coding assistants, including Codex, [Claude Code](https://claude.ai/code), and [OpenClaw](https://github.com/openclaw/openclaw).
+
+General-purpose skills live in `skills/`. Skills that depend on Raft member identities, workspaces, or collaboration workflows live in [`raft/skills/`](raft/README.md).
 
 ## Skills
 
@@ -32,20 +34,28 @@ Teaches Claude how to construct and execute `aliyun` commands for managing Aliba
 | DNS | list domains, add/update/delete records |
 | ACR | instances, namespaces, repositories, image tags, docker login |
 
+## Raft skills
+
+[team-skill-maintenance](raft/skills/team-skill-maintenance/SKILL.md) helps a team maintainer select, install, and update skills for specific Raft members, with fixed versions and runtime verification. See [Raft setup and installation](raft/README.md).
+
 ## Structure
 
 ```
 hambaobao-skills/
 ├── .claude-plugin/
 │   └── marketplace.json          # Claude Code plugin manifest
-└── skills/
-    ├── pr-writing/               # PR titles, descriptions, and writing assessment
-    │   └── SKILL.md
-    ├── aliyun-cli/               # Alibaba Cloud CLI skill
-    │   ├── SKILL.md
-    │   └── references/
-    └── <skill-name>/             # More skills coming...
-        └── SKILL.md
+├── skills/                       # General-purpose skills
+│   ├── pr-writing/
+│   │   └── SKILL.md
+│   └── aliyun-cli/
+│       ├── SKILL.md
+│       └── references/
+└── raft/                         # Raft-specific workflows
+    ├── README.md
+    └── skills/
+        └── team-skill-maintenance/
+            ├── SKILL.md
+            └── references/
 ```
 
 ## Installation
@@ -58,6 +68,8 @@ hambaobao-skills/
 ```
 
 For PR writing, use `/plugin install pr-writing@hambaobao-skills`. The existing Alibaba Cloud plugin is `aliyun-skills@hambaobao-skills`.
+
+For Raft team skill maintenance, use `/plugin install raft-team-skill-maintenance@hambaobao-skills` in the intended maintainer's environment.
 
 ### Manual
 
