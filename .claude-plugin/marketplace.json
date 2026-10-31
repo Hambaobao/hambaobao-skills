@@ -10,6 +10,15 @@
   },
   "plugins": [
     {
+      "name": "raft-codex-config",
+      "description": "Maintain per-member Codex configuration and verify effective settings in Raft",
+      "source": "./",
+      "strict": true,
+      "skills": [
+        "./raft/skills/raft-codex-config"
+      ]
+    },
+    {
       "name": "raft-team-skill-maintenance",
       "description": "Maintain and verify skills in Raft team members' workspaces",
       "source": "./",

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Raft Codex 配置"
+  short_description: "直接维护 Raft 成员的独立 Codex 配置并核实配置来源与生效范围"
