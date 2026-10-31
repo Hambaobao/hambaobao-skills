@@ -38,6 +38,8 @@ Teaches Claude how to construct and execute `aliyun` commands for managing Aliba
 
 [team-skill-maintenance](raft/skills/team-skill-maintenance/SKILL.md) helps a team maintainer select, install, and update skills for specific Raft members, with fixed versions and runtime verification. See [Raft setup and installation](raft/README.md).
 
+[raft-codex-config](raft/skills/raft-codex-config/SKILL.md) maintains per-member Codex configuration, diagnoses settings that do not take effect, and includes a read-only helper for inspecting effective values and their sources.
+
 ## Structure
 
 ```
@@ -53,9 +55,13 @@ hambaobao-skills/
 └── raft/                         # Raft-specific workflows
     ├── README.md
     └── skills/
-        └── team-skill-maintenance/
+        ├── team-skill-maintenance/
+        │   ├── SKILL.md
+        │   └── references/
+        └── raft-codex-config/
             ├── SKILL.md
-            └── references/
+            ├── agents/
+            └── scripts/
 ```
 
 ## Installation
@@ -70,6 +76,8 @@ hambaobao-skills/
 For PR writing, use `/plugin install pr-writing@hambaobao-skills`. The existing Alibaba Cloud plugin is `aliyun-skills@hambaobao-skills`.
 
 For Raft team skill maintenance, use `/plugin install raft-team-skill-maintenance@hambaobao-skills` in the intended maintainer's environment.
+
+For Raft Codex configuration, use `/plugin install raft-codex-config@hambaobao-skills` in the intended maintainer's environment.
 
 ### Manual
 
