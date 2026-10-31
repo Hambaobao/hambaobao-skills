@@ -20,14 +20,14 @@ description: 编写、更新或评估 Pull Request 的标题和正文，让评�
 
 ### 标题
 
-使用 `type(scope): Concrete change`。前缀中的 `type` 和 `scope` 用小写，描述概括当前整份变更的主要结果。
+使用 `type(scope): concrete change`。前缀中的 `type` 和 `scope` 用小写，描述概括当前整份变更的主要结果。
 
 - `type` 按主要结果选择：`feat` 新增能力、`fix` 修复缺陷、`refactor` 重构、`perf` 性能优化、`docs` 文档、`test` 测试、`build` 构建或依赖、`ci` 持续集成、`chore` 其他维护、`revert` 回退。
 - `scope` 使用受影响的模块或能力名称，例如 `auth`、`catalog`。当范围已由描述清楚表达，或变更跨越多个模块时，可省略 scope。
-- 描述默认使用英文，以首字母大写的动词原形开头，写清具体对象和结果。专有名称和标识符保留原本的大小写，例如 `API`、`GitHub`；保持单行，句末省略句号。
+- 描述默认使用英文，以小写的动词原形开头，写清具体对象和结果。专有名称和标识符保留原本的大小写，例如 `API`、`GitHub`；保持单行，句末省略句号。
 - 破坏兼容性的变更，在 type 或 scope 后加 `!`，并在正文交代影响和迁移方式。
 
-例如：`feat(auth): Add passkey login`、`fix(catalog): Preserve metadata during retries`、`docs: Clarify local setup`。
+例如：`feat(auth): add passkey login`、`fix(catalog): preserve metadata during retries`、`docs: clarify local setup`。
 
 ### 正文
 
