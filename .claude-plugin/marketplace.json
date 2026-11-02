@@ -28,6 +28,15 @@
       ]
     },
     {
+      "name": "issue-writing",
+      "description": "Write actionable GitHub issues and organize related work",
+      "source": "./",
+      "strict": true,
+      "skills": [
+        "./skills/issue-writing"
+      ]
+    },
+    {
       "name": "pr-writing",
       "description": "Write and assess reviewer-friendly PR titles and descriptions",
       "source": "./",
