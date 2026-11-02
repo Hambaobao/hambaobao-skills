@@ -6,6 +6,14 @@ General-purpose skills live in `skills/`. Skills that depend on Raft member iden
 
 ## Skills
 
+### issue-writing
+
+Prepare and maintain actionable GitHub issues, checking for duplicates, following repository conventions, and connecting child work to its parent issue. Uses English titles and chooses body language for the intended repository and maintainers.
+
+**Use when:** writing or creating an issue, updating its task context, or organizing a sub-issue.
+
+**Plugin name:** `issue-writing`.
+
 ### pr-writing
 
 Write, refresh, or assess PR titles and descriptions against the actual branch changes. Focuses on changed behavior, design decisions, useful validation evidence, and reviewer context. Follows each repository's existing template and conventions; otherwise provides a default title format and sections for background, changes, and validation, with English titles and Chinese bodies.
@@ -49,6 +57,8 @@ hambaobao-skills/
 ├── skills/                       # General-purpose skills
 │   ├── pr-writing/
 │   │   └── SKILL.md
+│   ├── issue-writing/
+│   │   └── SKILL.md
 │   └── aliyun-cli/
 │       ├── SKILL.md
 │       └── references/
@@ -74,6 +84,8 @@ hambaobao-skills/
 ```
 
 For PR writing, use `/plugin install pr-writing@hambaobao-skills`. The existing Alibaba Cloud plugin is `aliyun-skills@hambaobao-skills`.
+
+For issue writing, use `/plugin install issue-writing@hambaobao-skills`.
 
 For Raft team skill maintenance, use `/plugin install raft-team-skill-maintenance@hambaobao-skills` in the intended maintainer's environment.
 
