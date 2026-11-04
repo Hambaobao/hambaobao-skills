@@ -6,6 +6,14 @@ General-purpose skills live in `skills/`. Skills that depend on Raft member iden
 
 ## Skills
 
+### workspace-organization
+
+Organize task materials and indexes during daily work, and review references and dependencies before safely relocating existing files. Respects existing conventions, active paths, credentials, and retained evidence.
+
+**Use when:** creating task materials, maintaining workspace indexes, or planning and verifying workspace organization.
+
+**Plugin name:** `workspace-organization`.
+
 ### issue-writing
 
 Prepare and maintain actionable GitHub issues, checking for duplicates, following repository conventions, and connecting child work to its parent issue. Uses English titles and chooses body language for the intended repository and maintainers.
@@ -55,6 +63,8 @@ hambaobao-skills/
 ├── .claude-plugin/
 │   └── marketplace.json          # Claude Code plugin manifest
 ├── skills/                       # General-purpose skills
+│   ├── workspace-organization/
+│   │   └── SKILL.md
 │   ├── pr-writing/
 │   │   └── SKILL.md
 │   ├── issue-writing/
@@ -86,6 +96,8 @@ hambaobao-skills/
 For PR writing, use `/plugin install pr-writing@hambaobao-skills`. The existing Alibaba Cloud plugin is `aliyun-skills@hambaobao-skills`.
 
 For issue writing, use `/plugin install issue-writing@hambaobao-skills`.
+
+For workspace organization, use `/plugin install workspace-organization@hambaobao-skills`.
 
 For Raft team skill maintenance, use `/plugin install raft-team-skill-maintenance@hambaobao-skills` in the intended maintainer's environment.
 
