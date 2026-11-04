@@ -14,6 +14,8 @@ Organize task materials and indexes during daily work, and review references and
 
 **Plugin name:** `workspace-organization`.
 
+Environment maintainers can refer to [rule-file setup and migration](skills/workspace-organization/references/environment-maintenance.md).
+
 ### issue-writing
 
 Prepare and maintain actionable GitHub issues, checking for duplicates, following repository conventions, and connecting child work to its parent issue. Uses English titles and chooses body language for the intended repository and maintainers.
@@ -64,7 +66,8 @@ hambaobao-skills/
 │   └── marketplace.json          # Claude Code plugin manifest
 ├── skills/                       # General-purpose skills
 │   ├── workspace-organization/
-│   │   └── SKILL.md
+│   │   ├── SKILL.md
+│   │   └── references/
 │   ├── pr-writing/
 │   │   └── SKILL.md
 │   ├── issue-writing/
