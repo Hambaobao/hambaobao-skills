@@ -28,6 +28,15 @@
       ]
     },
     {
+      "name": "workspace-organization",
+      "description": "Organize workspace materials and verify references before relocating files",
+      "source": "./",
+      "strict": true,
+      "skills": [
+        "./skills/workspace-organization"
+      ]
+    },
+    {
       "name": "issue-writing",
       "description": "Write actionable GitHub issues and organize related work",
       "source": "./",
